@@ -37,7 +37,7 @@ Exemplo de Uso:
 - ProcessingData.py = Trata-se de um código para filtrar 3 dados de diferentes colunas.
   - A ideia é que as duas primeiras colunas nomeadas na escolha do input seja: Column_1 e Column_2 obrigatóriamente, são respectivamente Data e Hora.
   - A 3 coluna, ou melhor, Column_3 é de livre escolha.
-- ProcesingData2.py = Segue o mesmo sentido do primeiro código com adendos que é a possibilidade de trabalhar com uma filtragem de 5 colunas.
+- ProcesingData2.py = Segue o mesmo sentido do primeiro código com adendos que é a possibilidade de trabalhar com uma filtragem de 6 colunas.
   - As Column_1 e Column_2 continuam obrigatóriamente a ser inseridas e as restantes são livres.
   - A ideia é que possamos trabalhar com mais variavéis: Vento, Gust, Direção de Vento, Radiação Solar, Chuvas.
 
