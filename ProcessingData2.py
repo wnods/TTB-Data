@@ -57,7 +57,7 @@ for root, dirs, files in os.walk(directory_path):
     print(f"Files in current directory: {files}")
     for file in files:
         # Check if file ends with '.csv'
-        if file.endswith('Backup-DataTTB_24_Final.csv'):
+        if file.endswith('Data/Backup-DataTTB_24_Final.csv'):
             # Construct the full file path
             file_path = os.path.join(root, file)
             try:
@@ -132,7 +132,7 @@ if data_frames:
         print(f"\nFiltered data from merged column '{column1}', '{column2}', '{column3}', '{column4}', '{column5}', and '{column6}' (values > 0):\n{filtered_merged_column}")
 
         # Save filtered data to CSV
-        output_file = 'TestePlotlille.csv'
+        output_file = 'FilteredData.csv'
         filtered_merged_column.to_csv(output_file, index=False, header=[f"{column1_name}, {column2_name}, {column3_name}, {column4_name}, {column5_name}, {column6_name}"])
 
         print(f"\nFiltered merged data saved to '{output_file}' successfully.")
