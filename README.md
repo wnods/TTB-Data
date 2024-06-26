@@ -9,7 +9,7 @@ Leitura de Dados: O programa lê dados brutos de um arquivo CSV contendo informa
 
 Filtragem: Implementa filtros para selecionar dados específicos com base em critérios como faixa de temperatura, datas específicas, ou tipos de eventos meteorológicos.
 
-Análise Simples: Realiza uma análise básica dos dados filtrados, calculando médias, máximas, mínimas, e desvios padrão das variáveis meteorológicas.
+Adaptativo para Análise Simples: Realiza uma análise básica dos dados filtrados, calculando médias, máximas, mínimas, e desvios padrão das variáveis meteorológicas.
 
 Estrutura do Projeto
 main.py: Arquivo principal que contém o código para ler, filtrar e analisar os dados meteorológicos.
