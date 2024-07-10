@@ -1,28 +1,28 @@
 # TTB_Data
  ## Projeto de filtragem de Dados Meteorológicos na Ilha de Tatuoca. 
 
-Este projeto consiste em uma aplicação simples em Python para filtrar dados meteorológicos coletados de uma estação meteorológica. O objetivo é processar e analisar esses dados para extrair informações úteis.
+# Este projeto consiste em uma aplicação simples em Python para filtrar dados meteorológicos coletados de uma estação meteorológica. O objetivo é processar e analisar esses dados para extrair informações úteis.
 
-Funcionalidades:
+## Funcionalidades:
 
-Leitura de Dados: O programa lê dados brutos de um arquivo CSV contendo informações meteorológicas como temperatura, umidade, pressão atmosférica, etc.
+# Leitura de Dados: O programa lê dados brutos de um arquivo CSV contendo informações meteorológicas como temperatura, umidade, pressão atmosférica, etc.
 
-Filtragem: Implementa filtros para selecionar dados específicos com base em critérios como faixa de temperatura, datas específicas, ou tipos de eventos meteorológicos.
+# Filtragem: Implementa filtros para selecionar dados específicos com base em critérios como faixa de temperatura, datas específicas, ou tipos de eventos meteorológicos.
 
-Adaptativo para Análise Simples: Realiza uma análise básica dos dados filtrados, calculando médias, máximas, mínimas, e desvios padrão das variáveis meteorológicas.
+# Adaptativo para Análise Simples: Realiza uma análise básica dos dados filtrados, calculando médias, máximas, mínimas, e desvios padrão das variáveis meteorológicas.
 
-Estrutura do Projeto:
+## Estrutura do Projeto:
 
 main.py: Arquivo principal que contém o código para ler, filtrar e analisar os dados meteorológicos.
 
 data.csv: Arquivo de exemplo contendo os dados meteorológicos em formato CSV para fins de teste.
 
-Como Usar:
+  # Como Usar:
 
-Pré-requisitos:
+# Pré-requisitos:
 
-Python 3 instalado.
-Instalação:
+# Python 3 instalado.
+# Instalação:
 
 Clone o repositório: git clone https://github.com/wnods/TTB_Data.git
 Navegue até o diretório do projeto: cd nome-do-repositorio 
