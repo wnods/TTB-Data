@@ -27,7 +27,7 @@ Navegue até o diretório do projeto: cd nome-do-repositorio
 
 ========================
 
-Execução:
+# Execução:
 
 Execute o script principal: python3 ProcessingData.py ou ProcessingData2.py
 
@@ -48,6 +48,6 @@ Há um terceiro script de código chamado de FilterDate.py
 - Use coluna 1 por se tratar de um dado em '.csv' e a linha é livre.
 - Os melhores dados de 'Data/Backup-DataTTB_24_Final.csv' só são visiveis a partir do dia e horário: 10/05/2024	17:55. Coluna 1 e Linha 147.
 
-Contribuição
+## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request com melhorias ou novas funcionalidades.
