@@ -1,7 +1,6 @@
 # TTB_Data
 Projeto de filtragem de Dados Meteorológicos na Ilha de Tatuoca. 
 
-Filtragem de Dados Meteorológicos
 Este projeto consiste em uma aplicação simples em Python para filtrar dados meteorológicos coletados de uma estação meteorológica. O objetivo é processar e analisar esses dados para extrair informações úteis.
 
 Funcionalidades
