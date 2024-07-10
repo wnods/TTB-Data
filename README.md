@@ -1,12 +1,6 @@
 
-#### Precisa de etiquetas de licença? </br>
-- [shields.io](https://shields.io/)
-- [choosealicense.com](https://choosealicense.com/) </br>
 <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></br>
-<a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0"></a></br>
-<a href="https://www.gnu.org/licenses/gpl-3.0" target="_blank"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a></br>
-<a href="https://opensource.org/licenses/BSD-3-Clause" target="_blank"><img src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" alt="License: BSD 3-Clause"></a></br>
-<a href="https://creativecommons.org/licenses/by/4.0" target="_blank"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License: CC BY 4.0"></a></br>
+
 
 
 
