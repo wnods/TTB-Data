@@ -1,5 +1,6 @@
 
-<a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></br>
+<a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></br> ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+
 
 
 
