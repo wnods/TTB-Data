@@ -1,3 +1,24 @@
+"""
+Projeto: Leitura e Manipulação de Arquivos CSV de Dados Climáticos
+
+Descrição:
+Este projeto tem como objetivo a leitura, manipulação e combinação de arquivos CSV contendo dados climáticos. 
+A principal solução oferecida por este código é a capacidade de extrair e organizar dados específicos de múltiplos 
+arquivos CSV, combinando-os em um único DataFrame, filtrando e salvando os resultados em um novo arquivo CSV.
+
+Função do Problema:
+- Ler arquivos CSV de um diretório específico.
+- Extrair dados de colunas especificadas pelo usuário.
+- Filtrar os dados de acordo com condições específicas (valores maiores que 0).
+- Combinar as colunas filtradas em um novo arquivo CSV.
+- Permitir que o usuário nomeie as colunas no arquivo de saída.
+
+Autor: Wilson Weliton Oliveira de Souza, Talita dos Santos e Jandyr Travassos.
+Data: 2024
+
+Mais informações em: https://github.com/wnods/TTB-Data/blob/main/README.md
+"""
+
 import pandas as pd
 import os
 import csv
@@ -71,7 +92,7 @@ for root, dirs, files in os.walk(directory_path):
             except Exception as e:
                 print(f"Error loading file {file}: {e}")
 
-# Concatenate all DataFrames into a single DataFrame
+# All DataFrames into a single DataFrame
 if data_frames:
     final_df = pd.concat(data_frames, ignore_index=True)
     # Output the head of the final DataFrame
