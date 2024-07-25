@@ -1,3 +1,23 @@
+"""
+Projeto: Leitura e Processamento de Arquivos CSV
+
+Descrição:
+Este projeto tem como objetivo a leitura de arquivos CSV e o processamento de seus dados em um formato estruturado.
+O código é projetado para lidar com arquivos CSV que contêm múltiplas colunas de dados, fornecendo uma maneira
+eficiente de converter esses dados em um dicionário organizado para análise posterior.
+
+Função do Problema:
+- Ler um arquivo CSV especificado.
+- Remover valores 'nan' e linhas em branco do arquivo.
+- Identificar e processar linhas de cabeçalho e linhas de dados.
+- Estruturar os dados em um dicionário, onde as chaves são os nomes dos campos de dados e os valores são arrays numpy.
+
+Autores: Wilson Oliveira, Jandyr Travassos.
+Data: 2024
+
+Mais informações em: https://github.com/wnods/TTB-Data/blob/main/README.md
+"""
+
 #
 # -------------- Reads a CSV file ----------------------------
 #
