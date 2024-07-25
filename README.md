@@ -35,9 +35,11 @@ Data
   
      /CSV.py
   
-FilterDate.py - filter.py
-ProcessingData.py - main.py
-ProcessingData2.py - main.py
+FilterDate.py  [filter.py]
+
+ProcessingData.py  [main.py]
+
+ProcessingData2.py  [main.py]
     
 # Como Usar:
 Pré-requisitos:
