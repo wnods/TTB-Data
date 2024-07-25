@@ -27,17 +27,17 @@ data.csv: Arquivo de exemplo contendo os dados meteorológicos em formato CSV pa
 filter.py: Filtragem por data dos Arquivo CSV já feito.
 
 TTB24
-- Data
+Data
   
-   /Document.CSV
+     /Document.CSV
   
-- Reader
+ Reader
   
-   /CSV.py
+     /CSV.py
   
-- FilterDate.py - filter.py
-- ProcessingData.py - main.py
-- ProcessingData2.py - main.py
+FilterDate.py - filter.py
+ProcessingData.py - main.py
+ProcessingData2.py - main.py
     
 # Como Usar:
 Pré-requisitos:
