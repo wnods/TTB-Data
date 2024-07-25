@@ -18,12 +18,22 @@
 
  Adaptativo para Análise Simples: Realiza uma análise básica dos dados filtrados, calculando médias, máximas, mínimas, e desvios padrão das variáveis meteorológicas.
 
-## Estrutura do Projeto:
-
+## Estrutura do Projeto em Pasta:
+Data: Dados do Projeto 
+Reader: Código utilizado para leitura do Documento CSV que contém os dados do Backup.
 main.py: Arquivo principal que contém o código para ler, filtrar e analisar os dados meteorológicos.
-
 data.csv: Arquivo de exemplo contendo os dados meteorológicos em formato CSV para fins de teste.
-
+filter.py: Filtragem dos Arquivo CSV já feito.
+=================================================================================================
+TTB24
+    Data
+       /Document.CSV
+    Reader
+       /CSV.py
+    Filter.py - filter.py
+    ProcessingData.py - main.py
+    ProcessingData2.py - main.py
+    
 # Como Usar:
 Pré-requisitos:
 Python 3 instalado.
