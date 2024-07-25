@@ -2,9 +2,6 @@
 <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></br> ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 
 
-
-
-
 # TTB_Data
  ## Projeto de filtragem de Dados Meteorológicos na Ilha de Tatuoca. 
 
@@ -19,18 +16,25 @@
  Adaptativo para Análise Simples: Realiza uma análise básica dos dados filtrados, calculando médias, máximas, mínimas, e desvios padrão das variáveis meteorológicas.
 
 ## Estrutura do Projeto em Pasta:
-
 Data: Dados do Projeto 
+
 Reader: Código utilizado para leitura do Documento CSV que contém os dados do Backup.
+
 main.py: Arquivo principal que contém o código para ler, filtrar e analisar os dados meteorológicos.
+
 data.csv: Arquivo de exemplo contendo os dados meteorológicos em formato CSV para fins de teste.
+
 filter.py: Filtragem por data dos Arquivo CSV já feito.
 
 TTB24
 - Data
+  
    /Document.CSV
+  
 - Reader
+  
    /CSV.py
+  
 - FilterDate.py - filter.py
 - ProcessingData.py - main.py
 - ProcessingData2.py - main.py
