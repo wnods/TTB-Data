@@ -43,7 +43,9 @@ ProcessingData2.py  [main.py]
     
 # Como Usar:
 Pré-requisitos:
-Python 3 instalado.
+Python instalado.
+
+Bibliotecas: Pandas
 
 # Instalação:
 Clone o repositório: git clone https://github.com/wnods/TTB_Data.git
