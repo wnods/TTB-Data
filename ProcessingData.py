@@ -19,6 +19,7 @@ Data: 2024
 Mais informações em: https://github.com/wnods/TTB-Data/blob/main/README.md
 """
 
+
 import pandas as pd
 import os
 import csv
@@ -66,7 +67,7 @@ def ipcsv(file, encoding='utf-8'):
     return dicy
 
 # Directory for data files
-directory_path = '../TTB24'
+directory_path = '../TTB-Data'
 
 # List to hold all DataFrames
 data_frames = []
@@ -78,7 +79,7 @@ for root, dirs, files in os.walk(directory_path):
     print(f"Files in current directory: {files}")
     for file in files:
         # Check if file ends with '.csv'
-        if file.endswith('Data/Backup-DataTTB_24_Final.csv'):
+        if file.endswith('Backup-DataTTB_24_Final.csv'):
             # Construct the full file path
             file_path = os.path.join(root, file)
             try:
@@ -92,7 +93,7 @@ for root, dirs, files in os.walk(directory_path):
             except Exception as e:
                 print(f"Error loading file {file}: {e}")
 
-# All DataFrames into a single DataFrame
+# Concatenate all DataFrames into a single DataFrame
 if data_frames:
     final_df = pd.concat(data_frames, ignore_index=True)
     # Output the head of the final DataFrame
@@ -107,34 +108,45 @@ if data_frames:
     column1_name = input(f"Enter the name for '{column1}' column in the output file: ")
     column2_name = input(f"Enter the name for '{column2}' column in the output file: ")
     column3_name = input(f"Enter the name for '{column3}' column in the output file: ")
+    
 
     # Check if the columns exist in the DataFrame
     if all(col in final_df.columns for col in [column1, column2, column3]):
         # Filter column3 to values greater than 0
         column3_filtered = final_df[column3].apply(pd.to_numeric, errors='coerce').fillna(0)
+        
+
         filtered_final_df = final_df.copy()
         filtered_final_df[column3] = column3_filtered
-
-        # Merge the three columns into a new column
-        merged_column = filtered_final_df[column1].astype(str) + ', ' + filtered_final_df[column2].astype(str) + ', ' + filtered_final_df[column3].astype(str)
         
+
+        # Merge the 3 columns into a new column
+        merged_column = (
+            filtered_final_df[column1].astype(str) + ', ' +
+            filtered_final_df[column2].astype(str) + ', ' +
+            filtered_final_df[column3].astype(str) + ', ' +
+            filtered_final_df[column].astype(str)
+        )
+
         # Output the merged column
-        print(f"\nMerged data from columns '{column1}', '{column2}', and '{column3}':\n{merged_column}")
+        print(f"\nMerged data from columns '{column1}', '{column2}', '{column3}', :\n{merged_column}")
 
-        # Filter merged column to values greater than 0
-        filtered_merged_column = merged_column[filtered_final_df[column3].astype(float) > 0]
-        
+        # Filter merged column to values greater than 0 in column3, column4, column5, and column6
+        filtered_merged_column = merged_column[
+            (filtered_final_df[column3].astype(float) > 0)
+        ]
+
         # Output filtered data
-        print(f"\nFiltered data from merged column '{column1}', '{column2}', and '{column3}' (values > 0):\n{filtered_merged_column}")
-        
-        # Save filtered data to CSV. Changes as need.
-        output_file = 'DailyRain.csv'
+        print(f"\nFiltered data from merged column '{column1}', '{column2}', '{column3}', (values > 0):\n{filtered_merged_column}")
+
+        # Save filtered data to CSV
+        output_file = 'FilteredData.csv'
         filtered_merged_column.to_csv(output_file, index=False, header=[f"{column1_name}, {column2_name}, {column3_name}"])
-        
+
         print(f"\nFiltered merged data saved to '{output_file}' successfully.")
-        
+
         # Show the selected column names
-        print(f"\nYou selected columns: '{column1}' ({column1_name}), '{column2}' ({column2_name}), and '{column3}' ({column3_name})")
+        print(f"\nYou selected columns: '{column1}' ({column1_name}), '{column2}' ({column2_name}), '{column3}' ({column3_name})")
     else:
         print(f"One or more of the specified columns do not exist in the DataFrame.")
 else:
