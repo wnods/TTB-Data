@@ -67,7 +67,7 @@ def ipcsv(file, encoding='utf-8'):
     return dicy
 
 # Directory for data files
-directory_path = '../TTB24'
+directory_path = '../TTB-Data'
 
 # List to hold all DataFrames
 data_frames = []
@@ -79,7 +79,7 @@ for root, dirs, files in os.walk(directory_path):
     print(f"Files in current directory: {files}")
     for file in files:
         # Check if file ends with '.csv'
-        if file.endswith('Data/Backup-DataTTB_24_Final.csv'):
+        if file.endswith('Backup-DataTTB_24_Final.csv'):
             # Construct the full file path
             file_path = os.path.join(root, file)
             try:
