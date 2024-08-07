@@ -28,7 +28,7 @@ def read_csv_to_dataframe(file_path, encoding='latin-1'):
     return df
 
 # Directory of the files
-directory_path = '../TTB24'
+directory_path = '../TTB-Data/Data'
 
 # List to store all DataFrames
 data_frames = []
