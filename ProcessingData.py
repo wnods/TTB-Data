@@ -124,9 +124,8 @@ if data_frames:
         merged_column = (
             filtered_final_df[column1].astype(str) + ', ' +
             filtered_final_df[column2].astype(str) + ', ' +
-            filtered_final_df[column3].astype(str) + ', ' +
-            filtered_final_df[column].astype(str)
-        )
+            filtered_final_df[column3].astype(str)
+            )
 
         # Output the merged column
         print(f"\nMerged data from columns '{column1}', '{column2}', '{column3}', :\n{merged_column}")
