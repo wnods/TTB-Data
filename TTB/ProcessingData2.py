@@ -17,7 +17,7 @@ Função do Problema:
 - Combinar as colunas filtradas em um novo arquivo CSV.
 - Permitir que o usuário nomeie as colunas no arquivo de saída.
 
-Autor: Wilson Oliveira, Talita Santos e Jandyr Travassos.
+Autor: Wilson Oliveira e Jandyr Travassos.
 Data: 2024
 
 Mais informações em: https://github.com/wnods/TTB-Data/blob/main/README.md
