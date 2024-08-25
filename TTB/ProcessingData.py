@@ -2,6 +2,27 @@ import pandas as pd
 import os
 import csv
 
+"""
+Projeto: Leitura e Manipulação de Arquivos CSV de Dados Climáticos
+
+Descrição:
+Este projeto tem como objetivo a leitura, manipulação e combinação de arquivos CSV contendo dados climáticos. 
+A principal solução oferecida por este código é a capacidade de extrair e organizar dados específicos de múltiplos 
+arquivos CSV, combinando-os em um único DataFrame, filtrando e salvando os resultados em um novo arquivo CSV.
+
+Função do Problema:
+- Ler arquivos CSV de um diretório específico.
+- Extrair dados de colunas especificadas pelo usuário.
+- Filtrar os dados de acordo com condições específicas (valores maiores que 0).
+- Combinar as colunas filtradas em um novo arquivo CSV.
+- Permitir que o usuário nomeie as colunas no arquivo de saída.
+
+Autor: Wilson Oliveira, Talita Santos e Jandyr Travassos.
+Data: 2024
+
+Mais informações em: https://github.com/wnods/TTB-Data/blob/main/README.md
+"""
+
 def ipcsv(file, encoding='utf-8'):
     """
     Reads a CSV file with up to n columns
