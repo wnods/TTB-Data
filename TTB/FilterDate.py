@@ -1,6 +1,28 @@
 import pandas as pd
 import os
 
+"""
+
+Projeto: Extração e Manipulação de Dados Climáticos a partir de Arquivos CSV
+
+Descrição:
+Este projeto é destinado à leitura e manipulação de arquivos CSV que contêm dados climáticos. O código permite
+a extração de dados específicos de múltiplos arquivos CSV em um diretório, oferecendo a capacidade de selecionar
+colunas e linhas para análise detalhada. O principal objetivo é consolidar os dados extraídos em um único DataFrame,
+facilitando a análise e o processamento posterior.
+
+Função do Problema:
+- Percorrer um diretório para encontrar arquivos CSV específicos.
+- Ler os arquivos CSV e carregá-los em DataFrames usando a biblioteca pandas.
+- Permitir ao usuário selecionar colunas e linhas específicas para extração de dados.
+- Consolidar todos os DataFrames em um único DataFrame para análise unificada.
+
+Autor: Wilson Oliveira, Talita Santos e Jandyr Travassos.
+Data: 2024
+
+Mais informações em: https://github.com/wnods/TTB-Data/blob/main/README.md
+"""
+
 # Function to read CSV and return DataFrame
 def read_csv_to_dataframe(file_path, encoding='latin-1'):
     df = pd.read_csv(file_path, encoding=encoding)
