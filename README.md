@@ -1,79 +1,75 @@
-
 <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></br> ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 
 
 # TTB_Data
- ## Projeto de filtragem de Dados Meteorológicos na Ilha de Tatuoca. 
 
- Este projeto consiste em uma aplicação simples em Python para filtrar dados meteorológicos coletados de uma estação meteorológica. O objetivo é processar e analisar esses dados para extrair informações úteis.
+## Meteorological Data Filtering Project on Tatuoca Island
 
-## Funcionalidades:
+This project is a simple Python application for filtering meteorological data collected from a weather station. The goal is to process and analyze this data to extract useful information.
 
- Leitura de Dados: O programa lê dados brutos de um arquivo CSV contendo informações meteorológicas como temperatura, umidade, pressão atmosférica, etc.
+## Features
 
- Filtragem: Implementa filtros para selecionar dados específicos com base em critérios como faixa de temperatura, datas específicas, ou tipos de eventos meteorológicos.
+- **Data Reading**: The program reads raw data from a CSV file containing meteorological information such as temperature, humidity, atmospheric pressure, etc.
 
- Adaptativo para Análise Simples: Realiza uma análise básica dos dados filtrados, calculando médias, máximas, mínimas, e desvios padrão das variáveis meteorológicas.
+- **Filtering**: Implements filters to select specific data based on criteria such as temperature range, specific dates, or types of weather events.
 
-## Estrutura do Projeto em Pasta:
-Data: Dados do Projeto 
+- **Adaptive for Simple Analysis**: Performs a basic analysis of the filtered data, calculating averages, maxima, minima, and standard deviations of the meteorological variables.
 
-Reader: Código utilizado para leitura do Documento CSV que contém os dados do Backup.
+## Project Folder Structure
 
-main.py: Arquivo principal que contém o código para ler, filtrar e analisar os dados meteorológicos.
+- **Data**: Project Data
+- **Reader**: Code used to read the CSV Document containing the Backup data.
+- **main.py**: Main file that contains the code to read, filter, and analyze meteorological data.
+- **data.csv**: Example file containing meteorological data in CSV format for testing purposes.
+- **filter.py**: Date filtering of the CSV file already done.
 
-data.csv: Arquivo de exemplo contendo os dados meteorológicos em formato CSV para fins de teste.
+### TTB24
 
-filter.py: Filtragem por data dos Arquivo CSV já feito.
-
-TTB24
-Data
+- **Data**
+  - `/Document.CSV`
   
-     /Document.CSV
+- **Reader**
+  - `/CSV.py`
   
- Reader
-  
-     /CSV.py
-  
-FilterDate.py  [filter.py]
+- **FilterDate.py**: [filter.py]
 
-ProcessingData.py  [main.py]
+- **ProcessingData.py**: [main.py]
 
-ProcessingData2.py  [main.py]
+- **ProcessingData2.py**: [main.py]
     
-# Como Usar:
-Pré-requisitos:
-Python instalado.
+## How to Use
 
-Bibliotecas: Pandas
+### Prerequisites
 
-# Instalação:
-Clone o repositório: git clone https://github.com/wnods/TTB_Data.git
-Navegue até o diretório do projeto: cd nome-do-repositorio 
+- Python installed.
+- Libraries: Pandas
 
-========================
+### Installation
 
-# Execução:
+1. Clone the repository: `git clone https://github.com/wnods/TTB_Data.git`
+2. Navigate to the project directory: `cd repository-name`
 
-Execute o script principal: python3 ProcessingData.py ou ProcessingData2.py
+## Execution
 
-Siga as instruções no console para filtrar os dados conforme necessário.
-Exemplo de Uso:
+1. Run the main script: `python3 ProcessingData.py` or `ProcessingData2.py`
+2. Follow the instructions on the console to filter the data as needed.
 
-- ProcessingData.py = Trata-se de um código para filtrar 3 dados de diferentes colunas.
-  - A ideia é que as duas primeiras colunas nomeadas na escolha do input seja: Column_1 e Column_2 obrigatóriamente, são respectivamente Data e Hora.
-  - A 3 coluna, ou melhor, Column_3 é de livre escolha.
-- ProcesingData2.py = Segue o mesmo sentido do primeiro código com adendos que é a possibilidade de trabalhar com uma filtragem de 6 colunas.
-  - As Column_1 e Column_2 continuam obrigatóriamente a ser inseridas e as restantes são livres.
-  - A ideia é que possamos trabalhar com mais variavéis: Vento, Gust, Direção de Vento, Radiação Solar, Chuvas.
+### Usage Example
 
-O programa exibirá os resultados da filtragem e análise diretamente no console.
+- **ProcessingData.py**: This script filters data from 3 different columns.
+  - The first two columns named in the input choice must be: Column_1 and Column_2, which are respectively Date and Time.
+  - The 3rd column (Column_3) is freely chosen.
 
-Há um terceiro script de código chamado de FilterDate.py
-- Tem como objetivo uma leitura geral dos dados por linha/data especifica.
-- Use coluna 1 por se tratar de um dado em '.csv' e a linha é livre.
-- Os melhores dados de 'Data/Backup-DataTTB_24_Final.csv' só são visiveis a partir do dia e horário: 10/05/2024	17:55. Coluna 1 e Linha 147.
+- **ProcesingData2.py**: This script extends the functionality to filter data from 6 columns.
+  - Columns 1 and 2 must still be inserted, and the remaining columns are free to choose.
+  - This allows working with more variables: Wind, Gust, Wind Direction, Solar Radiation, Rain.
 
-## Contribuição
+The program will display the filtering and analysis results directly on the console.
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request com melhorias ou novas funcionalidades.
+- **FilterDate.py**: This script provides a general reading of the data by line or specific date.
+  - Use Column 1 since it is a '.csv' file, and the line is free.
+  - The best data from `Data/Backup-DataTTB_24_Final.csv` is only visible from the date and time: 10/05/2024 17:55. Column 1 and Line 147.
+
+## Contribution
+
+Contributions are welcome! Feel free to open an issue or submit a pull request with improvements or new features.
